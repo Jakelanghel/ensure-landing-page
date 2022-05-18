@@ -1,0 +1,42 @@
+/* Colors 
+Primary 
+Dark Violet: hsl(256, 26%, 20%)
+Grayish Blue: hsl(216, 30%, 68%) 
+Neutral 
+Very Dark Violet: hsl(270, 9%, 17%)
+Dark Grayish Violet: hsl(273, 4%, 51%)
+Very Light Gray:hsl(273, 4%, 51%)  */
+
+:root {
+  /* PRIMARY - COLORS */
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  /* NEUTRAL - COLORS */
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --grayish-violet: hsl(273, 4%, 51%);
+  --light-gray: hsl(273, 4%, 51%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
+}
