@@ -1,12 +1,3 @@
-/* Colors 
-Primary 
-Dark Violet: hsl(256, 26%, 20%)
-Grayish Blue: hsl(216, 30%, 68%) 
-Neutral 
-Very Dark Violet: hsl(270, 9%, 17%)
-Dark Grayish Violet: hsl(273, 4%, 51%)
-Very Light Gray:hsl(273, 4%, 51%)  */
-
 :root {
   /* PRIMARY - COLORS */
   --dark-violet: hsl(256, 26%, 20%);
@@ -67,6 +58,16 @@ nav {
   background-color: var(--dark-violet);
   text-align: center;
   color: var(--white);
+  background-image: url("images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+}
+
+.img-absolute {
+  position: absolute;
+  right: 0;
+  top: 73%;
 }
 
 .intro-img-mobile {
@@ -81,8 +82,10 @@ nav {
 }
 
 .intro-body {
+  max-width: 375px;
   font-size: 1.15rem;
   line-height: 1.75rem;
+  margin: 0 auto;
   margin-bottom: 3rem;
 }
 
@@ -105,7 +108,7 @@ nav {
 
 .about-title {
   font-size: 2.75rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .about-title::before {
@@ -133,12 +136,17 @@ nav {
   font-size: 1rem;
   line-height: 1.75rem;
   color: var(--light-gray);
+  max-width: 375px;
+  margin: 0 auto;
   margin-bottom: 4rem;
 }
 
 .cta {
   text-align: center;
   background-color: var(--dark-violet);
+  background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
   margin: 0 1.5rem;
   padding: 4rem 2.5rem;
   margin-bottom: 8rem;
@@ -146,6 +154,7 @@ nav {
 
 .cta-title {
   font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 500;
   color: var(--white);
   margin-bottom: 2rem;
@@ -164,6 +173,8 @@ nav {
 .container-soc {
   text-align: center;
   margin-bottom: 3rem;
+  background-image: url("images/bg-pattern-footer-mobile.svg");
+  padding-top: 4rem;
 }
 
 .footer-logo {
