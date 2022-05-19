@@ -18,6 +18,10 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 0;
 }
 
 h1,
@@ -34,10 +38,6 @@ h3 {
   font-family: "DM Serif Display", serif;
 }
 
-.nav-list {
-  display: none;
-}
-
 .intro-img-desktop {
   display: none;
 }
@@ -46,7 +46,49 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 0 2rem;
+  height: 100px;
+}
+
+.nav-list {
+  display: none;
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: var(--very-dark-violet);
+  z-index: 1;
+  padding: 3rem 0;
+}
+
+.nav-list > li {
+  margin-bottom: 3rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  padding: 1.5rem 5rem;
+}
+
+.plans-link {
+  padding: 1rem 6rem;
+  width: 90%;
+  background-color: transparent;
+  border: solid 2px var(--white);
+}
+
+.menu-btn-close {
+  display: none;
 }
 
 .container-hero-img {
