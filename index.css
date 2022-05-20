@@ -21,7 +21,6 @@ body {
   min-height: 100vh;
   width: 100vw;
   position: relative;
-  z-index: 0;
 }
 
 h1,
@@ -43,6 +42,9 @@ h3 {
 }
 
 nav {
+  width: 100%;
+  position: fixed;
+  background: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,8 +56,8 @@ nav {
   display: none;
   text-align: center;
   width: 100%;
-  min-height: 100%;
-  position: absolute;
+  min-height: 800px;
+  position: fixed;
   top: 100px;
   left: 0;
   right: 0;
@@ -63,8 +65,12 @@ nav {
   margin: 0;
   list-style: none;
   background-color: var(--very-dark-violet);
-  z-index: 1;
+  background-image: url("images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
   padding: 3rem 0;
+  backdrop-filter: blur(50px);
 }
 
 .nav-list > li {
@@ -91,6 +97,11 @@ nav {
   display: none;
 }
 
+.nav-open {
+  background-color: var(--very-dark-violet);
+  opacity: 0.3;
+}
+
 .container-hero-img {
   width: 100%;
 }
@@ -103,13 +114,13 @@ nav {
   background-image: url("images/bg-pattern-intro-left-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  position: relative;
 }
 
 .img-absolute {
   position: absolute;
   right: 0;
-  top: 73%;
+  top: 950px;
+  z-index: -1;
 }
 
 .intro-img-mobile {
