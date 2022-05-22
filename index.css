@@ -20,7 +20,6 @@ body {
   padding: 0;
   min-height: 100vh;
   width: 100vw;
-  position: relative;
 }
 
 h1,
@@ -44,12 +43,14 @@ h3 {
 nav {
   width: 100%;
   position: fixed;
+  top: 0;
   background: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   height: 100px;
+  z-index: 1000;
 }
 
 .nav-list {
@@ -61,7 +62,7 @@ nav {
   top: 100px;
   left: 0;
   right: 0;
-  padding: 0;
+  padding: 3rem 0;
   margin: 0;
   list-style: none;
   background-color: var(--very-dark-violet);
@@ -69,7 +70,6 @@ nav {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  padding: 3rem 0;
   backdrop-filter: blur(50px);
 }
 
@@ -102,8 +102,27 @@ nav {
   opacity: 0.3;
 }
 
-.container-hero-img {
+main {
+  margin-top: 100px;
+  z-index: 0;
+}
+
+.intro {
   width: 100%;
+  background-color: var(--dark-violet);
+}
+
+.container-intro {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.container-intro-img {
+  width: 100%;
+}
+
+.intro-img {
+  margin: 0 auto;
 }
 
 .intro-cta {
@@ -111,16 +130,27 @@ nav {
   background-color: var(--dark-violet);
   text-align: center;
   color: var(--white);
-  background-image: url("images/bg-pattern-intro-left-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  position: relative;
 }
 
-.img-absolute {
+.mobile__intro-bg-img-1 {
   position: absolute;
+  bottom: -175px;
   right: 0;
-  top: 950px;
-  z-index: -1;
+}
+
+.mobile__intro-bg-img-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.desktop__intro-bg-img-1 {
+  display: none;
+}
+
+.desktop__intro-bg-img-2 {
+  display: none;
 }
 
 .intro-img-mobile {
@@ -129,8 +159,10 @@ nav {
 }
 
 .intro-title {
+  max-width: 375px;
   font-size: 2.75rem;
   line-height: 3.25rem;
+  margin: 0 auto;
   margin-bottom: 1.25rem;
 }
 
@@ -157,6 +189,7 @@ nav {
 .about {
   padding: 7rem 1rem;
   text-align: center;
+  background-color: var(--white);
 }
 
 .about-title {
@@ -228,14 +261,18 @@ nav {
   margin-bottom: 3rem;
   background-image: url("images/bg-pattern-footer-mobile.svg");
   padding-top: 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer-logo {
+  width: 100px;
   margin-bottom: 2rem;
 }
 
 .container-soc-icons {
   width: 150px;
+
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
