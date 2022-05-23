@@ -3,24 +3,6 @@
     padding: 5rem 50px;
   }
 
-  @media screen and (min-width: 1100px) {
-    .padding {
-      padding: 5rem 100px;
-    }
-
-    .container-intro {
-      justify-content: center;
-    }
-
-    .intro-img {
-      right: auto;
-    }
-
-    .intro-body {
-      max-width: 500px;
-    }
-  }
-
   nav {
     display: flex;
     padding: 2rem 5rem;
@@ -49,7 +31,7 @@
     font-size: 1rem;
     font-weight: 700;
     color: var(--grayish-violet);
-    padding: 0 2rem;
+    padding: 1rem 1.5rem;
     margin-left: 1rem;
   }
 
@@ -77,11 +59,6 @@
     margin-right: 2rem;
   }
 
-  .container-intro-img {
-    width: 400px;
-    order: 2;
-  }
-
   .intro-cta {
     order: 1;
   }
@@ -98,10 +75,25 @@
     margin-bottom: 1rem;
   }
 
+  .intro-title::before {
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: var(--violet-gray);
+    margin-right: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .container-intro-img {
+    order: 2;
+    width: 400px;
+  }
+
   .intro-img {
+    width: 100%;
     position: absolute;
-    top: 75px;
-    /* right: 50px; */
+    top: 5rem;
     z-index: 2;
   }
 
@@ -179,9 +171,14 @@
   }
 
   .cta-title {
+    font-size: 2.25rem;
     max-width: 325px;
     text-align: left;
     margin: 0;
+  }
+
+  .cta-btn {
+    font-size: 1.15rem;
   }
 
   footer {
@@ -223,5 +220,28 @@
   .footer-list {
     text-align: left;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .padding {
+    padding: 5rem 100px;
+  }
+
+  .container-intro {
+    justify-content: center;
+  }
+
+  .intro-img {
+    right: auto;
+  }
+
+  .intro-img-desktop {
+    display: block;
+    /* width: 450px; */
+  }
+
+  .intro-body {
+    max-width: 500px;
   }
 }

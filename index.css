@@ -86,11 +86,21 @@ nav {
   padding: 1.5rem 5rem;
 }
 
+.nav-link:hover {
+  color: var(--very-dark-violet);
+  cursor: pointer;
+}
+
 .plans-link {
   padding: 1rem 6rem;
   width: 90%;
   background-color: transparent;
   border: solid 2px var(--white);
+}
+
+.plans-link:hover {
+  background-color: var(--dark-violet);
+  color: var(--white);
 }
 
 .menu-btn-close {
@@ -113,7 +123,6 @@ main {
 }
 
 .container-intro {
-  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -155,6 +164,8 @@ main {
 
 .intro-img-mobile {
   width: 100%;
+  max-width: 500px;
+
   display: block;
 }
 
@@ -168,7 +179,7 @@ main {
 
 .intro-body {
   max-width: 375px;
-  font-size: 1.15rem;
+  font-size: 1rem;
   line-height: 1.75rem;
   margin: 0 auto;
   margin-bottom: 3rem;
@@ -184,6 +195,11 @@ main {
   color: var(--white);
   padding: 0.75rem 2rem;
   border: solid 2px var(--white);
+}
+
+.intro-cta-btn:hover {
+  color: var(--very-dark-violet);
+  background-color: var(--white);
 }
 
 .about {
@@ -256,6 +272,11 @@ main {
   padding: 0.5rem 1.5rem;
 }
 
+.cta-btn:hover {
+  background: var(--white);
+  color: var(--very-dark-violet);
+}
+
 .container-soc {
   text-align: center;
   margin-bottom: 3rem;
@@ -265,6 +286,11 @@ main {
   background-size: cover;
 }
 
+.soc-icon:hover {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(16%) saturate(507%)
+    hue-rotate(227deg) brightness(96%) contrast(90%);
+}
+
 .footer-logo {
   width: 100px;
   margin-bottom: 2rem;
@@ -272,7 +298,6 @@ main {
 
 .container-soc-icons {
   width: 150px;
-
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -308,6 +333,10 @@ main {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--very-dark-violet);
+}
+
+.footer-link:hover {
+  cursor: pointer;
 }
 
 li {
